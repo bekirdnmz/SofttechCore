@@ -9,6 +9,8 @@ builder.Services.AddTransient<ITransientGuidGenerator, Transient>();
 builder.Services.AddScoped<IScopedGuidGenerator, Scoped>();
 builder.Services.AddSingleton<ISingletonGuidGenerator,Singleton>();
 
+builder.Services.AddTransient<ScopedService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

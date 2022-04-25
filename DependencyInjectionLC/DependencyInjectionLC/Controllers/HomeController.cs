@@ -10,14 +10,18 @@ namespace DependencyInjectionLC.Controllers
         private readonly ISingletonGuidGenerator singleton;
         private readonly IScopedGuidGenerator scoped;
         private readonly ITransientGuidGenerator transient;
+        private readonly ScopedService service;
 
         public HomeController(ILogger<HomeController> logger, ISingletonGuidGenerator singleton, 
                                                               IScopedGuidGenerator scoped, 
-                                                              ITransientGuidGenerator transient)
+                                                              ITransientGuidGenerator transient,
+                                                              ScopedService service
+                                                              )
         {
             this.singleton = singleton;
             this.scoped = scoped;
             this.transient = transient;
+            this.service = service;
             _logger = logger;
         }
 
@@ -26,6 +30,11 @@ namespace DependencyInjectionLC.Controllers
             ViewBag.Singleton = singleton.Guid;
             ViewBag.Transient = transient.Guid;
             ViewBag.Scoped = scoped.Guid;
+
+            ViewBag.ServiceSingleton = service.Singleton.Guid.ToString();
+            ViewBag.ServiceScoped = service.Scoped.Guid.ToString();
+            ViewBag.ServiceTransient = service.Transient.Guid.ToString();
+
             return View();
         }
 
