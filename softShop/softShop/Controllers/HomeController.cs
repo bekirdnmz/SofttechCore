@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using softShop.Models;
+using softShop.Services;
 using System.Diagnostics;
 
 namespace softShop.Controllers
@@ -7,15 +8,18 @@ namespace softShop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IProductService productService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IProductService productService)
         {
             _logger = logger;
+            this.productService = productService;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var products = productService.GetProducts();
+            return View(products);
         }
 
         public IActionResult Privacy()
