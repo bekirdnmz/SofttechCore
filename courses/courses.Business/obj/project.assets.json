@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "courses.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        }
+      },
+      "courses.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/courses.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "courses.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../courses.DataAccess/courses.DataAccess.csproj",
+      "msbuildProject": "../courses.DataAccess/courses.DataAccess.csproj"
+    },
+    "courses.Entities/1.0.0": {
+      "type": "project",
+      "path": "../courses.Entities/courses.Entities.csproj",
+      "msbuildProject": "../courses.Entities/courses.Entities.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "courses.DataAccess >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\turka\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Business\\courses.Business.csproj",
+      "projectName": "courses.Business",
+      "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Business\\courses.Business.csproj",
+      "packagesPath": "C:\\Users\\turka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Business\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\turka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.DataAccess\\courses.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.DataAccess\\courses.DataAccess.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

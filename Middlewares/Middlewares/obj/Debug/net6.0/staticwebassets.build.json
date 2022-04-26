@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e4B17nfYqCFFNB8TmzJmmlKN6WqDokmyrFRBCRjXHac=",
+  "Hash": "lZTuoFwjVkz1p4D0gnXYztW9cDHXjIkHP0f0zOZo+Qc=",
   "Source": "Middlewares",
   "BasePath": "_content/Middlewares",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\Middlewares\\Middlewares\\wwwroot\\error.html",
+      "SourceId": "Middlewares",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\Middlewares\\Middlewares\\wwwroot\\",
+      "BasePath": "_content/Middlewares",
+      "RelativePath": "error.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\error.html"
     },
     {
       "Identity": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\Middlewares\\Middlewares\\wwwroot\\favicon.ico",

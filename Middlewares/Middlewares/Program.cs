@@ -1,9 +1,18 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Middlewares.Services;
+using Middlewares.Extensions;
+using Middlewares.Infrastructure;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+//builder.Services.AddSingleton<IProductService, ProductService>();
+//builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+
 
 var app = builder.Build();
+
 
 
 
@@ -18,25 +27,23 @@ if (!app.Environment.IsDevelopment())
 //app.UseWelcomePage();
 //app.Run(async (context) =>
 //{
-//    await context.Response.WriteAsync("Talebiniz, middleware'a ulaştı.");
+//    await context.Response.WriteAsync("Talebiniz, middleware'a ulasti.");
 //});
 
-app.Map("/test", xapp =>
+//app.Map() ile yazdığımız middleware, aşağıdaki extension metoda taşındı:
+app.UseProductIsExistTestPage();
+
+app.Use(async (context, next) =>
 {
-    xapp.Run(async (context) =>
-    {
-        var isParameterExist = context.Request.Query.ContainsKey("id");
-        if (isParameterExist)
-        {
-            var id = int.Parse(context.Request.Query["id"]);
-            await context.Response.WriteAsync($"{id} degeri ile test basarili.");
-        }
-        else
-        {
-            await context.Response.WriteAsync("id parametresi eksik");
-        }
-    });
+    Console.WriteLine($"{context.Request.Path} -  {context.Request.Method}");
+    await next.Invoke();
 });
+
+//app.UseMiddleware<IECheckerMiddleware>();
+//app.UseMiddleware<CreaateResponseMiddleware>();
+//app.UseMiddleware<RedirectToPageMiddleware>();
+
+app.UseIEChecker();
 
 
 app.UseHttpsRedirection();
