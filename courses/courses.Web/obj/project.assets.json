@@ -1,11 +1,66 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "courses.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/courses.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.Business.dll": {}
+        }
+      },
+      "courses.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        }
+      },
+      "courses.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/courses.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "courses.Business/1.0.0": {
+      "type": "project",
+      "path": "../courses.Business/courses.Business.csproj",
+      "msbuildProject": "../courses.Business/courses.Business.csproj"
+    },
+    "courses.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../courses.DataAccess/courses.DataAccess.csproj",
+      "msbuildProject": "../courses.DataAccess/courses.DataAccess.csproj"
+    },
+    "courses.Entities/1.0.0": {
+      "type": "project",
+      "path": "../courses.Entities/courses.Entities.csproj",
+      "msbuildProject": "../courses.Entities/courses.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "courses.Business >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\turka\\.nuget\\packages\\": {}
@@ -33,7 +88,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Business\\courses.Business.csproj": {
+              "projectPath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Business\\courses.Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

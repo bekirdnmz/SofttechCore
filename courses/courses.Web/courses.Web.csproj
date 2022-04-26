@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\courses.Business\courses.Business.csproj" />
+  </ItemGroup>
+
 </Project>

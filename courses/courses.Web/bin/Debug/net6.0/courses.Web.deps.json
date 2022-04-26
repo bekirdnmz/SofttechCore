@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "courses.Web/1.0.0": {
+        "dependencies": {
+          "courses.Business": "1.0.0"
+        },
+        "runtime": {
+          "courses.Web.dll": {}
+        }
+      },
+      "courses.Business/1.0.0": {
+        "dependencies": {
+          "courses.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "courses.Business.dll": {}
+        }
+      },
+      "courses.DataAccess/1.0.0": {
+        "dependencies": {
+          "courses.Entities": "1.0.0"
+        },
+        "runtime": {
+          "courses.DataAccess.dll": {}
+        }
+      },
+      "courses.Entities/1.0.0": {
+        "runtime": {
+          "courses.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "courses.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "courses.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "courses.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "courses.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

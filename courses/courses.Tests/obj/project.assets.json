@@ -1671,9 +1671,48 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
+      "courses.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/courses.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.Business.dll": {}
+        }
+      },
+      "courses.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.DataAccess.dll": {}
+        }
+      },
+      "courses.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/courses.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/courses.Entities.dll": {}
+        }
+      },
       "courses.Web/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "courses.Business": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/courses.Web.dll": {}
         },
@@ -5975,6 +6014,21 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "courses.Business/1.0.0": {
+      "type": "project",
+      "path": "../courses.Business/courses.Business.csproj",
+      "msbuildProject": "../courses.Business/courses.Business.csproj"
+    },
+    "courses.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../courses.DataAccess/courses.DataAccess.csproj",
+      "msbuildProject": "../courses.DataAccess/courses.DataAccess.csproj"
+    },
+    "courses.Entities/1.0.0": {
+      "type": "project",
+      "path": "../courses.Entities/courses.Entities.csproj",
+      "msbuildProject": "../courses.Entities/courses.Entities.csproj"
     },
     "courses.Web/1.0.0": {
       "type": "project",
