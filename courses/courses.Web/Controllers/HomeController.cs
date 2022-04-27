@@ -20,14 +20,30 @@ namespace courses.Web.Controllers
         {
             var itemPerPage = 3;
             var courses = courseService.GetCourses();
+
+            PagingInfo pagingInfo = new PagingInfo
+            {
+                CurrentPage = page.Value,
+                ItemsPerPage = itemPerPage,
+                TotalItems = courses.Count()
+            };
+
+            
+
             var pagingCourses = courses.OrderBy(x => x.Id)
                                        .Skip((page.Value - 1) * itemPerPage)
                                        .Take(itemPerPage)
                                        .ToList();
 
-            
-            ViewBag.TotalPages = Math.Ceiling((decimal)courses.Count() / itemPerPage);
-            return View(pagingCourses);
+            var viewModel = new CourseListViewModel
+            {
+                Courses = pagingCourses,
+                PagingInfo = pagingInfo
+            };
+
+
+            //ViewBag.TotalPages = Math.Ceiling((decimal)courses.Count() / itemPerPage);
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

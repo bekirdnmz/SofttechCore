@@ -1,17 +1,17 @@
-﻿@model IEnumerable<Course>
+﻿@model CourseListViewModel
 @{
     ViewData["Title"] = "Home Page";
 }
 
 
-<div class="conatiner">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
             <h1>@ViewBag.Title</h1>
         </div>
     </div>
     <div class="row">
-        @foreach (var course in Model)
+        @foreach (var course in Model.Courses)
         {
 
             <div class="col-md-3" style="margin:10px;">
@@ -30,15 +30,17 @@
    
    
 
-    <ul class="pagination">
-        @for (var i = 1; i <= ViewBag.TotalPages; i++)
+   @* <ul class="pagination">
+        @for (var i = 1; i <= Model.PagingInfo.TotalPages; i++)
         {
              <li class="page-item"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
         }  
      
 
-    </ul>
+    </ul>*@
     
 
-
+    <div page-model="@Model.PagingInfo" page-action="Index" ></div>
 </div>
+
+
