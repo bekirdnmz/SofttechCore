@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using courses.DataTransferObjects.Requests;
 using courses.DataTransferObjects.Responses;
 using courses.Entities;
 using System;
@@ -14,7 +15,9 @@ namespace courses.Business.Mapper
         public MapProfile()
         {
             CreateMap<Course, CourseSummaryResponse>();
-            
+            CreateMap<Course, CourseDetailResponse>();
+            CreateMap<AddCourseRequest, Course>();
+
         }
     }
 }

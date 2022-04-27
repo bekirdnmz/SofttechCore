@@ -13,3 +13,5 @@ C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\cou
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.DataAccess\obj\Debug\net6.0\refint\courses.DataAccess.dll
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.DataAccess\obj\Debug\net6.0\courses.DataAccess.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.DataAccess\obj\Debug\net6.0\ref\courses.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.DataAccess\bin\Debug\net6.0\courses.DataAccess.runtimeconfig.json
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.DataAccess\obj\Debug\net6.0\courses.DataAccess.genruntimeconfig.cache

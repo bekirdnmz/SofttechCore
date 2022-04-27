@@ -15,9 +15,10 @@ namespace courses.Entities
         public DateTime? EndDate { get; set; }
         public double? Price { get; set; }
         public int? TotalHours { get; set; }
-        public Category Category { get; set; }
-
+        public int CategoryId { get; set; }
         public string CourseImage { get; set; } = "https://loremflickr.com/320/180";
+        public Category Category { get; set; }
+     
 
     }
 }

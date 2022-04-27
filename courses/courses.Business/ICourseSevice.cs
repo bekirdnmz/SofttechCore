@@ -1,4 +1,5 @@
-﻿using courses.DataTransferObjects.Responses;
+﻿using courses.DataTransferObjects.Requests;
+using courses.DataTransferObjects.Responses;
 using courses.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,9 @@ namespace courses.Business
     public interface ICourseService
     {
         IEnumerable<CourseSummaryResponse> GetCourses();
+        IEnumerable<CourseSummaryResponse> SearchCourse(string name);
+
+        CourseDetailResponse GetCourse(int id);
+        int CreateCourse(AddCourseRequest course);
     }
 }

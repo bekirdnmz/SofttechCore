@@ -26,6 +26,22 @@ namespace courses.DataAccess.Repositories
                 new Course{ Id= 10, Name = "C", Description = "C is a programming language"},
             };
         }
+
+        public void Add(Course entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Course Get(int id)
+        {
+            return courses.FirstOrDefault(c => c.Id == id);
+        }
+
         public ICollection<Course> GetAll()
         {
             return courses;
@@ -34,6 +50,11 @@ namespace courses.DataAccess.Repositories
         public IEnumerable<Course> SearchByName(string name)
         {
             return courses.Where(c => c.Name.ToLower().Contains(name.ToLower()));
+        }
+
+        public void Update(Course entity)
+        {
+            throw new NotImplementedException();
         }
     }
 }

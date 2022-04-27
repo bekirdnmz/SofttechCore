@@ -17,6 +17,12 @@ namespace courses.Business.Extensions
 
         }
 
+        public static T ConvertToDto<T>(this Course course, IMapper mapper)
+        {
+            return mapper.Map<T>(course);
+
+        }
+
         public static IEnumerable<CourseSummaryResponse>  ConvertToCourseSummaryResponses(this ICollection<Course> courses, IMapper mapper)
         {
             return mapper.Map<IEnumerable<CourseSummaryResponse>>(courses); 
