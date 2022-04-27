@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "vN0BXiufHmuu+eo8KpcKC9/IKFNgKCQQ/YVaI1GjHP38TeGvO0wQ/IofL+HsEOiOIFA+98zo+sdeZ6KhsLL+Qg==",
+  "dgSpecHash": "ONKWvUIEUQjBmmIHjD+AdAxVv5RKmRQE+0HUMcrHMzMQk3XjG3fiYDDHOY6U7x3jGph2prjF+cJZIkY+T8Q8kg==",
   "success": true,
   "projectFilePath": "C:\\Users\\turka\\source\\repos\\Kurumsal\\Softtech\\Ileri .NET Core\\Part I\\courses\\courses.Web\\courses.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\turka\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\turka\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

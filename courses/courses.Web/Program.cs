@@ -1,4 +1,5 @@
 using courses.Business;
+using courses.Business.Mapper;
 using courses.DataAccess.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<ICourseRepository, FakeCourseRepository>();
+
+builder.Services.AddAutoMapper(typeof(MapProfile));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

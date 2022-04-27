@@ -1,4 +1,5 @@
-﻿using courses.Entities;
+﻿using courses.DataTransferObjects.Responses;
+using courses.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,6 @@ namespace courses.Business
 {
     public interface ICourseService
     {
-        IEnumerable<Course> GetCourses();
+        IEnumerable<CourseSummaryResponse> GetCourses();
     }
 }

@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.Web", "courses.Web\courses.Web.csproj", "{C05CE21C-A14A-4210-B3EF-0EF5CEBD0BA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses.Web", "courses.Web\courses.Web.csproj", "{C05CE21C-A14A-4210-B3EF-0EF5CEBD0BA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.Entities", "courses.Entities\courses.Entities.csproj", "{FB790FD1-39BE-475E-9D74-5ADFE3459763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses.Entities", "courses.Entities\courses.Entities.csproj", "{FB790FD1-39BE-475E-9D74-5ADFE3459763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.Business", "courses.Business\courses.Business.csproj", "{AB968771-96D8-4216-A4D8-ED31058C72E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses.Business", "courses.Business\courses.Business.csproj", "{AB968771-96D8-4216-A4D8-ED31058C72E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.DataAccess", "courses.DataAccess\courses.DataAccess.csproj", "{8A2A6059-8E5F-4ABD-9BFC-6A7DC670950D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses.DataAccess", "courses.DataAccess\courses.DataAccess.csproj", "{8A2A6059-8E5F-4ABD-9BFC-6A7DC670950D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.Tests", "courses.Tests\courses.Tests.csproj", "{587F9632-278F-4173-B99E-322C386D2CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "courses.Tests", "courses.Tests\courses.Tests.csproj", "{587F9632-278F-4173-B99E-322C386D2CEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "courses.DataTransferObjects", "courses.DataTransferObjects\courses.DataTransferObjects.csproj", "{D24EC383-AF9D-4A03-888B-5274008ADAC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{587F9632-278F-4173-B99E-322C386D2CEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{587F9632-278F-4173-B99E-322C386D2CEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{587F9632-278F-4173-B99E-322C386D2CEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D24EC383-AF9D-4A03-888B-5274008ADAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D24EC383-AF9D-4A03-888B-5274008ADAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D24EC383-AF9D-4A03-888B-5274008ADAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D24EC383-AF9D-4A03-888B-5274008ADAC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

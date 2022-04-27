@@ -31,3 +31,7 @@ C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\cou
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\obj\Debug\net6.0\courses.Web.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\obj\Debug\net6.0\courses.Web.genruntimeconfig.cache
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\obj\Debug\net6.0\ref\courses.Web.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\bin\Debug\net6.0\courses.DataTransferObjects.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Web\bin\Debug\net6.0\courses.DataTransferObjects.pdb

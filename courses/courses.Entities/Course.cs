@@ -17,5 +17,7 @@ namespace courses.Entities
         public int? TotalHours { get; set; }
         public Category Category { get; set; }
 
+        public string CourseImage { get; set; } = "https://loremflickr.com/320/180";
+
     }
 }
