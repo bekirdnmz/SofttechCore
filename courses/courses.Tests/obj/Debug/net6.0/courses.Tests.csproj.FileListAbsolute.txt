@@ -112,3 +112,7 @@ C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\cou
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\obj\Debug\net6.0\courses.Tests.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\obj\Debug\net6.0\courses.Tests.genruntimeconfig.cache
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\obj\Debug\net6.0\ref\courses.Tests.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\bin\Debug\net6.0\courses.DataTransferObjects.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Tests\bin\Debug\net6.0\courses.DataTransferObjects.pdb
