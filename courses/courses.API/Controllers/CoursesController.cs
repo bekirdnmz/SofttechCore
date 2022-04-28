@@ -48,5 +48,19 @@ namespace courses.API.Controllers
             }
             return BadRequest(ModelState);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, UpdateCourseRequest course)
+        {
+            
+            if (ModelState.IsValid)
+            {
+                courseService.UpdateCourse(id, course);
+                return Ok();
+            }
+            return BadRequest(ModelState);
+        }
+
+
     }
 }

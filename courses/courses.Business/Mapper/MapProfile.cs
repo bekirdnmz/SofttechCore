@@ -17,6 +17,7 @@ namespace courses.Business.Mapper
             CreateMap<Course, CourseSummaryResponse>();
             CreateMap<Course, CourseDetailResponse>();
             CreateMap<AddCourseRequest, Course>();
+            CreateMap<UpdateCourseRequest, Course>();
 
         }
     }

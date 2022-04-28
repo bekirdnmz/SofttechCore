@@ -15,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<ICourseRepository, EFCourseRepository>();
+
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
 var connectionString = builder.Configuration.GetConnectionString("coursesDb");

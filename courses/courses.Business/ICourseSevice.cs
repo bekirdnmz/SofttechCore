@@ -16,5 +16,7 @@ namespace courses.Business
 
         CourseDetailResponse GetCourse(int id);
         int CreateCourse(AddCourseRequest course);
+        void UpdateCourse(int id, UpdateCourseRequest course);
+        void DeleteCourse(int id);
     }
 }

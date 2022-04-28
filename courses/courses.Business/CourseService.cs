@@ -30,12 +30,16 @@ namespace courses.Business
             return course.Id;
         }
 
+        public void DeleteCourse(int id)
+        {
+            courseRepository.Delete(id);
+        }
+
         public CourseDetailResponse GetCourse(int id)
         {
             var course = courseRepository.Get(id);
             var dto = course.ConvertToDto<CourseDetailResponse>(mapper);
             return dto;
-
         }
 
         public IEnumerable<CourseSummaryResponse> GetCourses()
@@ -65,6 +69,13 @@ namespace courses.Business
             var response = courses?.ConvertToDto<IEnumerable<CourseSummaryResponse>>(mapper);
             return response;
 
+        }
+
+        public void UpdateCourse(int id, UpdateCourseRequest request)
+        {
+            var course = mapper.Map<Course>(request);
+            courseRepository.Update(course);
+            
         }
     }
 }
