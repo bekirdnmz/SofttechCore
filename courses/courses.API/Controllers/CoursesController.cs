@@ -20,6 +20,7 @@ namespace courses.API.Controllers
        
 
         [HttpGet]
+        
         public IActionResult Get()
         {
             var courses = courseService.GetCourses();
