@@ -18,5 +18,6 @@ namespace courses.Business
         int CreateCourse(AddCourseRequest course);
         void UpdateCourse(int id, UpdateCourseRequest course);
         void DeleteCourse(int id);
+        bool CourseExists(int id);
     }
 }

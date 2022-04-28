@@ -41,6 +41,11 @@ namespace courses.DataAccess.Repositories
             return courseDbContext.Courses.ToList();
         }
 
+        public bool IsExist(int id)
+        {
+            return courseDbContext.Courses.Any(x => x.Id == id);
+        }
+
         public IEnumerable<Course> SearchByName(string name)
         {
             return courseDbContext.Courses.Where(c => c.Name.Contains(name) || 

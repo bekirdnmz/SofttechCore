@@ -23,6 +23,11 @@ namespace courses.Business
             this.mapper = mapper;
         }
 
+        public bool CourseExists(int id)
+        {
+            return courseRepository.IsExist(id);
+        }
+
         public int CreateCourse(AddCourseRequest request)
         {
             var course = mapper.Map<Course>(request);

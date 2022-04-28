@@ -14,7 +14,8 @@ namespace courses.DataAccess.Repositories
         void Add(T entity);
         void Update(T entity);
         void Delete(int id);
-        
-        
+        bool IsExist(int id);
+
+
     }
 }

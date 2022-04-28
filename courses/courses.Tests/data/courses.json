@@ -1,0 +1,71 @@
+[
+  {
+    "Id": 5,
+    "Name": "Course A",
+    "Description": "Course A Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "1.jpg"
+  },
+  {
+    "Id": 6,
+    "Name": "Course B",
+    "Description": "Course B Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "2.jpg"
+  },
+  {
+    "Id": 7,
+    "Name": "Course C",
+    "Description": "Course C Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "3.jpg"
+  },
+  {
+    "Id": 8,
+    "Name": "Course D",
+    "Description": "Course D Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "4.jpg"
+  },
+  {
+    "Id": 9,
+    "Name": "Course E",
+    "Description": "Course E Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "5.jpg"
+  },
+  {
+    "Id": 10,
+    "Name": "Course F",
+    "Description": "Course F Description",
+    "StartDate": "2022-04-30",
+    "EndDate": "2022-05-30",
+    "Price": 0,
+    "TotalHours": 10,
+    "CategoryId": 1,
+    "CourseImage": "6.jpg"
+  }
+
+  
+  
+]

@@ -10,16 +10,21 @@ namespace courses.API.Controllers
     public class CoursesController : ControllerBase
     {
         private readonly ICourseService courseService;
+        private readonly ILogger<CoursesController> logger;
 
-        public CoursesController(ICourseService courseService)
+        public CoursesController(ICourseService courseService, ILogger<CoursesController> logger)
         {
             this.courseService = courseService;
+            this.logger = logger; 
         }
+       
 
         [HttpGet]
         public IActionResult Get()
         {
             var courses = courseService.GetCourses();
+            var message = $"{DateTime.Now} tarihinde, get request metodu çalıştı";
+            logger.LogInformation(message);
             return Ok(courses);
         }
        
@@ -52,13 +57,27 @@ namespace courses.API.Controllers
         [HttpPut("{id}")]
         public IActionResult Put(int id, UpdateCourseRequest course)
         {
-            
-            if (ModelState.IsValid)
+            if (courseService.CourseExists(id))
             {
-                courseService.UpdateCourse(id, course);
+                if (ModelState.IsValid)
+                {
+                    courseService.UpdateCourse(id, course);
+                    return Ok();
+                }
+                return BadRequest(ModelState);
+            }
+            return NotFound();
+
+        }
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            if (courseService.CourseExists(id))
+            {
+                courseService.DeleteCourse(id);
                 return Ok();
             }
-            return BadRequest(ModelState);
+            return NotFound();
         }
 
 

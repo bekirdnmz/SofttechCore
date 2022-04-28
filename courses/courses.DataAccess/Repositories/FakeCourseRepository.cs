@@ -47,6 +47,11 @@ namespace courses.DataAccess.Repositories
             return courses;
         }
 
+        public bool IsExist(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<Course> SearchByName(string name)
         {
             return courses.Where(c => c.Name.ToLower().Contains(name.ToLower()));

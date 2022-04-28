@@ -2,8 +2,10 @@ C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\cou
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.Business.dll
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.Business.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataAccess.dll
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataTransferObjects.dll
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.Entities.dll
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataAccess.pdb
+C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataTransferObjects.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.Entities.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\obj\Debug\net6.0\courses.Business.csproj.AssemblyReference.cache
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\obj\Debug\net6.0\courses.Business.GeneratedMSBuildEditorConfig.editorconfig
@@ -15,5 +17,3 @@ C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\cou
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\obj\Debug\net6.0\refint\courses.Business.dll
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\obj\Debug\net6.0\courses.Business.pdb
 C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\obj\Debug\net6.0\ref\courses.Business.dll
-C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataTransferObjects.dll
-C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part I\courses\courses.Business\bin\Debug\net6.0\courses.DataTransferObjects.pdb
