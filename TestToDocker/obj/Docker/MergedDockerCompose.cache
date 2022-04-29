@@ -1,0 +1,17 @@
+services:
+  testtodocker:
+    build:
+      context: C:\Users\turka\source\repos\Kurumsal\Softtech\Ileri .NET Core\Part
+        I\TestToDocker
+      dockerfile: TestToDocker/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: testtodocker
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - C:\Users\turka\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\turka\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
